@@ -18,7 +18,7 @@ const Moderator = () => {
  const awsConfig = {
    region: 'us-east-1', 
    accessKeyId: process.env.REACT_APP_accessKeyId, 
-   secretAccessKey: REACT_APP_secretAccessKey, 
+   secretAccessKey: process.env.REACT_APP_secretAccessKey, 
  };
    AWS.config.update(awsConfig);
   const rekognition=new AWS.Rekognition();
